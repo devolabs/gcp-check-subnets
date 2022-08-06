@@ -29,3 +29,28 @@
 ```
 ./gpc-check-subnets.sh 192.168.0.1/24 all
 ```
+
+## Output
+The script returns information about the projects where the searched subnet exists.
+
+##### Match:
+```
+######################################
+Subnet xxx.xxx.xxx.xxx/xx does exist!
+######################################
+Project ID:  xxx-xxx-xxx
+Range: xxx.xxx.xxx.xxx/xx
+######################################
+```
+##### Unmatched:
+```
+######################################
+Subnet xxx.xxx.xxx.xxx/xx does NOT exist!
+######################################
+
+```
+##### Also the script create 3 files in the execution path:
+- result.log (contain the projects where the searched subnet exists)
+- ranges.log (contain all the ranges/subnets evaluated)
+- projects.log (contain all the projects where the subnet was serched)
+
