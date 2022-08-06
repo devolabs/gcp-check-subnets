@@ -1,3 +1,4 @@
+##Requirements
 
-Info
+- Bash >= 3.2
 
