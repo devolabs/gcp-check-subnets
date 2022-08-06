@@ -5,8 +5,10 @@
 
 ## Usage
 
+'''
 ./gpc-check-subnets.sh <range> <first|all> [filter]
-
+'''
+  
 ## Example
   
 - Find first result in projects that contains "xyz" in projectId or project name:
