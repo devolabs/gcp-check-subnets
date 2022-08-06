@@ -1,3 +1,8 @@
+## Description
+This script verifies in all Google Cloud Projects the already configured subnets in vpc networks, it tries to help you to avoid overlapping when you require to peering the VPCs.
+
+Also, the script list all the existing subnets. (Check outputs).
+
 ## Requirements
 
 - Bash >= 3.2
@@ -30,7 +35,7 @@
 ./gpc-check-subnets.sh 192.168.0.1/24 all
 ```
 
-## Output
+## Result
 The script returns information about the projects where the searched subnet exists.
 
 ##### Match:
@@ -49,7 +54,9 @@ Subnet xxx.xxx.xxx.xxx/xx does NOT exist!
 ######################################
 
 ```
-##### Also the script create 3 files in the execution path:
+## Output
+The script creates 3 files in the execution path:
+
 - result.log (contain the projects where the searched subnet exists)
 - ranges.log (contain all the ranges/subnets evaluated)
 - projects.log (contain all the projects where the subnet was serched)
